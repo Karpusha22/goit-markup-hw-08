@@ -1,0 +1,136 @@
+.header {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  @extend %list-style;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.nav {
+  @extend %list-style;
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav__item {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav__link {
+  position: relative;
+  color: $secondarytext-color;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color $transition-duration $transition-fuction;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+    cursor: pointer;
+  }
+}
+
+.nav__link--active {
+  position: relative;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $accent-color;
+
+  transition: color $transition-duration $transition-fuction;
+
+  &--active::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: $accent-color;
+
+    opacity: 1;
+  }
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contact:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $maintext-color;
+  fill: $maintext-color;
+
+  text-decoration: none;
+
+  transition-property: color, fill;
+  transition-timing-function: $transition-fuction;
+  transition-duration: $transition-duration;
+}
+
+.contact__icon--tel,
+.contact__icon--email {
+  margin-right: 10px;
+}
+
+.contact__link:hover,
+.contact__link:focus {
+  color: $accent-color;
+  fill: $accent-color;
+}

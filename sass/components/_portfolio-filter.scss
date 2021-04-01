@@ -1,0 +1,50 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  align-content: center;
+}
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__button {
+  color: $secondarytext-color;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: $backgroundbuttons-color;
+  border-radius: 4px;
+  padding: 6px 22px;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+  transition-property: background-color, color, box-shadow;
+  transition-timing-function: $transition-fuction;
+  transition-duration: $transition-duration;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: $accent-color;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
