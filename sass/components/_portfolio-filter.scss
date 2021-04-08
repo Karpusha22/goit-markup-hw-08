@@ -1,9 +1,27 @@
+// @media screen and (min-width: 768px) {
+//   @media screen and (min-width: 1200px) {
+
 .filter {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: left;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item {

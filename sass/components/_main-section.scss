@@ -1,19 +1,34 @@
+// @media screen and (min-width: 1200px) {
+
 .main__title {
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto;
   font-family: $main-font;
   color: $white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 136%;
+  font-size: 26px;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    margin: 0 auto;
+    font-family: $main-font;
+    color: $white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 
 .main {
-  max-width: 1600px;
-  min-height: 600px;
+  max-width: 480px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -24,10 +39,62 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/mainsection.jpg);
+    url(../images/Mainmobile.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $backgroundfootertitle-color;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main {
+    background-image: url("../images/Mainmobile@2.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    max-width: 768px;
+    min-height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Maintablet.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main {
+    background-image: url("../images/Maintablet@2.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    max-width: 1600px;
+    min-height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/mainsection.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $backgroundfootertitle-color;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main {
+    background-image: url("../images/mainsection@2x.jpg");
+  }
 }
 
 .main__button {

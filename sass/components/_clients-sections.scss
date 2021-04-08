@@ -1,0 +1,160 @@
+//  @media screen and (min-width: 1200px)
+
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.clients__title {
+  color: $secondarytext-color;
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    color: $secondarytext-color;
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    color: $secondarytext-color;
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+}
+
+.clients__list {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  margin-left: -15px;
+  margin-top: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+.client__item {
+  width: calc(100% / 2 - 15px);
+  margin-left: 15px;
+  margin-top: 15px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-property: border, color;
+  transition-timing-function: $transition-fuction;
+  transition-duration: $transition-duration;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 226px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition-property: border, color;
+    transition-timing-function: $transition-fuction;
+    transition-duration: $transition-duration;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition-property: border, color;
+    transition-timing-function: $transition-fuction;
+    transition-duration: $transition-duration;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
+  }
+}
+
+.client__icon {
+  fill: #afb1b8;
+  transition: fill $transition-duration $transition-fuction;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $accent-color;
+  }
+}

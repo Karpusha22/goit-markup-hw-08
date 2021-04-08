@@ -13,6 +13,7 @@ ol {
   text-decoration: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -20,7 +21,8 @@ img {
 }
 
 .container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
