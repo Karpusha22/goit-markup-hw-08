@@ -7,7 +7,7 @@
     padding: 60px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     background-color: $backgroundfootertitle-color;
   }
 }
@@ -25,7 +25,9 @@
   }
 
   @media screen and (min-width: 1200px) {
+    width: 1200px;
     display: flex;
+    flex-direction: row;
     align-items: baseline;
   }
 }
@@ -54,8 +56,12 @@
     flex-wrap: wrap;
     align-items: flex-start;
     text-decoration: none;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 15px;
+    margin-right: 0;
+
+    // text-decoration: none;
+    // margin-left: 0px;
+    // margin-right: 0px;
   }
 }
 .footer__logo--blue {
@@ -159,6 +165,8 @@
     letter-spacing: 0.03em;
     font-style: normal;
     font-weight: normal;
+    display: flex;
+    margin-left: 15px;
   }
 }
 
@@ -190,12 +198,7 @@
     display: block;
     list-style: none;
     text-align: left;
-  }
-}
-
-.footer__contacts {
-  @media screen and (min-width: 1200px) {
-    // margin-right: 70px;
+    margin-left: 15px;
   }
 }
 
@@ -212,12 +215,14 @@
 
   @media screen and (min-width: 768px) {
     display: block;
-    margin-left: 165px;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: 1200px) {
     display: block;
     align-items: baseline;
+    margin: 0;
+    margin-left: 70px;
   }
 }
 
@@ -287,20 +292,24 @@
 }
 
 .subscribe-form {
+  margin: 0 auto;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
-    margin-left: 166px;
+    margin: 0 auto;
     align-items: center;
   }
   @media screen and (min-width: 1200px) {
-    // width: 570px;
-
+    align-items: baseline;
     margin-left: 105px;
   }
+}
 
-  // @media screen and (min-width: 1200px) {
-  //   justify-content: center;
-  //   align-items: center;
-  // }
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .subscribe__title {
@@ -335,7 +344,7 @@
     text-transform: uppercase;
     color: $white-color;
     margin-bottom: 20px;
-    text-align: inherit;
+    text-align: left;
   }
 }
 .subscribe__input {
@@ -349,7 +358,7 @@
   outline: none;
 
   margin-right: 15px;
-  margin-left: 0px;
+  margin-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -381,6 +390,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
+    margin-left: 0;
 
     font-size: 16px;
     line-height: 1.25;
