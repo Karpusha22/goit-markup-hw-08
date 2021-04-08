@@ -496,6 +496,11 @@ img {
   color: #212121;
 }
 
+.menu__link:hover, .menu__link:focus, .menu__link:active {
+  color: #2196f3;
+  cursor: pointer;
+}
+
 .menu__link--active {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
@@ -529,6 +534,11 @@ img {
   margin-bottom: 32px;
 }
 
+.menu-contacts__phone:hover, .menu-contacts__phone:focus, .menu-contacts__phone:active {
+  color: #2196f3;
+  cursor: pointer;
+}
+
 .menu-contacts__email {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
@@ -537,6 +547,11 @@ img {
   text-decoration: none;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.menu-contacts__email:hover, .menu-contacts__email:focus, .menu-contacts__email:active {
+  color: #2196f3;
+  cursor: pointer;
 }
 
 .menu-contacts__list {

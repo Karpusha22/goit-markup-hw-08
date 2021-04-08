@@ -89,14 +89,21 @@
   text-decoration: none;
   color: $secondarytext-color;
 
-  &--active {
-    font-family: $main-font;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 46.88px;
-    text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active {
     color: $accent-color;
+    cursor: pointer;
   }
+}
+
+.menu__link--active {
+  font-family: $main-font;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 46.88px;
+  text-decoration: none;
+  color: $accent-color;
 }
 
 .menu__item {
@@ -122,6 +129,13 @@
   color: $accent-color;
   // margin-top: 302px;
   margin-bottom: 32px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+    cursor: pointer;
+  }
 }
 
 .menu-contacts__email {
@@ -132,6 +146,13 @@
   text-decoration: none;
   letter-spacing: 0.02em;
   color: $maintext-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+    cursor: pointer;
+  }
 }
 
 .menu-contacts__list {
