@@ -1,17 +1,7 @@
-// @media screen and (min-width: 1200px)
-
 .footer {
   padding: 60px 0;
   align-items: center;
   background-color: $backgroundfootertitle-color;
-
-  // @media screen and (min-width: 768px) {
-  //   padding: 60px 0;
-  //   display: flex;
-  //   flex-direction: row;
-  //   align-items: center;
-  //   background-color: $backgroundfootertitle-color;
-  // }
 
   @media screen and (min-width: 1200px) {
     padding: 60px 0;
@@ -36,7 +26,6 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-direction: row;
     align-items: baseline;
   }
 }
@@ -206,7 +195,7 @@
 
 .footer__contacts {
   @media screen and (min-width: 1200px) {
-    margin-right: 70px;
+    // margin-right: 70px;
   }
 }
 
@@ -302,19 +291,16 @@
     margin-left: 166px;
     align-items: center;
   }
-
   @media screen and (min-width: 1200px) {
-    width: 570px;
-    margin-right: auto;
-    margin-left: 100px;
-  }
-}
+    // width: 570px;
 
-.subscribe {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
+    margin-left: 105px;
   }
+
+  // @media screen and (min-width: 1200px) {
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 }
 
 .subscribe__title {
