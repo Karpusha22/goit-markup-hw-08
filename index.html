@@ -106,8 +106,7 @@
 </header>
 
     <main>
-        <!-- Главная- решения -->
-
+        <!-- Главная -->
         <section class="main">
             <div class="main__section">
                 <h1 class="main__title">Эффективные решения для вашего бизнеса</h1>
@@ -168,22 +167,53 @@
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work__list">
                     <li class="work__item">
-                        <img class="work__img" src="images/typing.jpg" alt="hands are typing on a keyboard"
-                            width="370" />
+                        <picture>
+                            <source
+                            srcset="
+                            images/desktop/studio/our-job-1.webp 1x, 
+                            images/desktop/studio/our-job-1@2x.webp 2x" 
+                            type="image/webp"/>
+
+                        <img class="work__img" 
+                        srcset="images/desktop/studio/our-job-1@2x.jpg 2x"
+                        src="images/desktop/studio/our-job-1.jpg" 
+                        alt="hands are typing on a keyboard"
+                        width="370"/>
+                        </picture>
                         <div class="work-overlay">
                             <p class="work__text"> Десктопные приложения</p>
                             </div>
                     </li>
                     <li class="work__item">
-                        <img class="work__img" src="images/appdev.jpg"
-                            alt="web designer is working on smartphone application" width="370" />
+                        <picture>
+                            <source
+                            srcset="
+                            images/desktop/studio/our-job-2.webp 1x, 
+                            images/desktop/studio/our-job-2@2x.webp 2x" 
+                            type="image/webp"/>
+
+                        <img class="work__img" 
+                        srcset="images/desktop/studio/our-job-2@2x.jpg 2x"
+                        src="images/desktop/studio/our-job-2.jpg"
+                        alt="web designer is working on smartphone application" width="370" />
+                        </picture>
                         <div class="work-overlay">
                             <p class="work__text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="work__item">
-                        <img class="work__img" src="./images/colorwheel.jpg"
+                        <picture>
+                            <source
+                            srcset="
+                            images/desktop/studio/our-job-3.webp 1x, 
+                            images/desktop/studio/our-job-3@2x.webp 2x" 
+                            type="image/webp"/>
+
+                        <img class="work__img" 
+                        srcset="images/desktop/studio/our-job-3@2x.jpg 2x"
+                        src="images/desktop/studio/our-job-3.jpg"
                             alt="designer is choosing a color from a color palet" width="370" />
+                        </picture>
                         <div class="work-overlay">
                             <p class="work__text">Дизайнерские решения</p></div>
                     </li>
@@ -196,10 +226,42 @@
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
-
                     <li class="team__item">
-                        <img class="team__img" src="images/IgorDemyanenko.jpg" alt="фото мужчины Игорь Демьяненко"
-                            width="270" />
+                        <picture>
+                            <source srcset="
+                            ./images/desktop/studio/teammate-1.webp 1x, 
+                            ./images/desktop/studio/teammate-1@2x.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp"/>
+
+                            <source srcset="
+                            ./images/desktop/studio/teammate-1.jpg 1x, 
+                            ./images/desktop/studio/teammate-1@2x.jpg 2x" 
+                            media="(min-width: 1200px)"/>
+
+                            <source srcset="
+                            ./images/tablet/studio/teammate1.webp 1x, 
+                            ./images/tablet/studio/teammate1@2x.webp 2x" 
+                            media="(min-width: 768px)" type="image/webp"/>
+
+                            <source srcset="
+                            ./images/tablet/studio/teammate1.jpg 1x, 
+                            ./images/tablet/studio/teammate1@2x.jpg 2x" 
+                            media="(min-width: 768px)"/>
+
+                            <source srcset="
+                            ./images/mobile/studio/teammate1.webp 1x, 
+                            ./images/mobile/studio/teammate1@2x.webp 2x" 
+                            media="(min-width: 320px)" type="image/webp"/>
+                            
+                            <source srcset="
+                            ./images/mobile/studio/teammate1.jpg 1x, 
+                            ./images/mobile/studio/teammate1@2x.jpg 2x"
+                            media="(min-width: 320px)"/>
+    
+                            <img src="./images/mobile/studio/teammate1.jpg" 
+                            alt="фото мужчины Игорь Демьяненко" 
+                            class="team__img"/>
+                        </picture>
 
                         <div class="team-meta">
                             <h3 class="team__subtitle">Игорь Демьяненко</h3>
@@ -239,8 +301,42 @@
 
 
                     <li class="team__item">
-                        <img class="team__img" src="./images/OlgaRepina.jpg" alt="фото девушки Ольга Репина"
-                            width="270" />
+                         <picture>
+                            <source srcset="
+                            ./images/desktop/studio/teammate-2.webp 1x, 
+                            ./images/desktop/studio/teammate-2@2x.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp"/>
+
+                            <source srcset="
+                            ./images/desktop/studio/teammate-2.jpg 1x, 
+                            ./images/desktop/studio/teammate-2@2x.jpg 2x" 
+                            media="(min-width: 1200px)"/>
+
+                            <source srcset="
+                            ./images/tablet/studio/teammate2.webp 1x, 
+                            ./images/tablet/studio/teammate2@2x.webp 2x" 
+                            media="(min-width: 768px)" type="image/webp"/>
+
+                            <source srcset="
+                            ./images/tablet/studio/teammate2.jpg 1x, 
+                            ./images/tablet/studio/teammate2@2x.jpg 2x" 
+                            media="(min-width: 768px)"/>
+
+                            <source srcset="
+                            ./images/mobile/studio/teammate2.webp 1x, 
+                            ./images/mobile/studio/teammate2@2x.webp 2x" 
+                            media="(min-width: 320px)" type="image/webp"/>
+                            
+                            <source srcset="
+                            ./images/mobile/studio/teammate2.jpg 1x, 
+                            ./images/mobile/studio/teammate2@2x.jpg 2x"
+                            media="(min-width: 320px)"/>
+    
+
+                        <img class="team__img" 
+                        src="images/mobile/studio/teammate-2.jpg" 
+                        alt="фото девушки Ольга Репина"/>
+                         </picture>
 
                         <div class="team-meta">
                             <h3 class="team__subtitle">Ольга Репина</h3>
@@ -280,9 +376,41 @@
 
 
                     <li class="team__item">
-                        <img class="team__img" src="./images/NikolaiTarasov.jpg" alt="фото мужчины Николай Тарасов"
-                            width="270" />
+                    <picture>
+                            <source srcset="
+                            ./images/desktop/studio/teammate-3.webp 1x, 
+                            ./images/desktop/studio/teammate-3@2x.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp"/>
 
+                            <source srcset="
+                            ./images/desktop/studio/teammate-3.jpg 1x, 
+                            ./images/desktop/studio/teammate-3@2x.jpg 2x" 
+                            media="(min-width: 1200px)"/>
+
+                            <source srcset="
+                            ./images/tablet/studio/teammate3.webp 1x, 
+                            ./images/tablet/studio/teammate3@2x.webp 2x" 
+                            media="(min-width: 768px)" type="image/webp"/>
+
+                            <source srcset="
+                            ./images/tablet/studio/teammate3.jpg 1x, 
+                            ./images/tablet/studio/teammate3@2x.jpg 2x" 
+                            media="(min-width: 768px)"/>
+
+                            <source srcset="
+                            ./images/mobile/studio/teammate3.webp 1x, 
+                            ./images/mobile/studio/teammate3@2x.webp 2x" 
+                            media="(min-width: 320px)" type="image/webp"/>
+                            
+                            <source srcset="
+                            ./images/mobile/studio/teammate3.jpg 1x, 
+                            ./images/mobile/studio/teammate3@2x.jpg 2x"
+                            media="(min-width: 320px)"/>
+
+                        <img class="team__img" 
+                        src="./images/mobile/studio/teammate3.jpg" 
+                        alt="фото мужчины Николай Тарасов">
+                    </picture>
                         <div class="team-meta">
                             <h3 class="team__subtitle">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -321,8 +449,40 @@
 
 
                     <li class="team__item">
-                        <img class="team__img" src="./images/MichaelErmakov.jpg" alt="фото мужчины Михаил Ермаков"
-                            width="270" />
+                        <picture>
+                            <source srcset="
+                            ./images/desktop/studio/teammate-4.webp 1x, 
+                            ./images/desktop/studio/teammate-4@2x.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp"/>
+
+                            <source srcset="
+                            ./images/desktop/studio/teammate-4.jpg 1x, 
+                            ./images/desktop/studio/teammate-4@2x.jpg 2x" 
+                            media="(min-width: 1200px)"/>
+
+                            <source srcset="
+                            ./images/tablet/studio/teammate4.webp 1x, 
+                            ./images/tablet/studio/teammate4@2x.webp 2x" 
+                            media="(min-width: 768px)" type="image/webp"/>
+
+                            <source srcset="
+                            ./images/tablet/studio/teammate4.jpg 1x, 
+                            ./images/tablet/studio/teammate4@2x.jpg 2x" 
+                            media="(min-width: 768px)"/>
+
+                            <source srcset="
+                            ./images/mobile/studio/teammate4.webp 1x, 
+                            ./images/mobile/studio/teammate4@2x.webp 2x" 
+                            media="(min-width: 320px)" type="image/webp"/>
+                            
+                            <source srcset="
+                            ./images/mobile/studio/teammate4.jpg 1x, 
+                            ./images/mobile/studio/teammate4@2x.jpg 2x"
+                            media="(min-width: 320px)"/>
+                        
+                        <img class="team__img" src="./images/MichaelErmakov.jpg" 
+                        alt="фото мужчины Михаил Ермаков"/>
+                        </picture>
 
                         <div class="team-meta">
                             <h3 class="team__subtitle">Михаил Ермаков</h3>
