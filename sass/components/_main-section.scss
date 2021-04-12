@@ -27,12 +27,9 @@
 }
 
 .main {
-  min-width: 480px;
-  min-height: 400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
@@ -40,10 +37,9 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/mobile/studio/hero-bg.jpg);
-
+  background-color: $backgroundfootertitle-color;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: $backgroundfootertitle-color;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -51,6 +47,8 @@
   (min-resolution: 2dppx) {
   .main {
     background-image: url(../images/mobile/studio/hero-bg@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -63,6 +61,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/tablet/studio/hero-bg.jpg);
+    background-position: center;
   }
 }
 

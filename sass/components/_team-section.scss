@@ -97,6 +97,7 @@
 .team__img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .team-meta {
@@ -104,8 +105,7 @@
   align-items: center;
   padding-top: 30px;
   padding-bottom: 24px;
-  padding-left: 122px;
-  padding-right: 122px;
+  align-self: center;
 
   @media screen and (min-width: 768px) {
     display: block;
