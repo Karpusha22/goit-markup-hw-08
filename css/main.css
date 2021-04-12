@@ -585,7 +585,7 @@ img {
   padding-right: 10px;
 }
 
-.menu-social__item {
+.menu-social__item:not(:first-child) {
   padding-left: 10px;
 }
 
